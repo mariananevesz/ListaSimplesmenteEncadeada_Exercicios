@@ -39,4 +39,18 @@ public class ListaFuncionario
         }
     }
 
+    public bool buscarporNome(string nome)
+    {
+        NoFuncionario atual = this.inicio;
+        while (atual != null)
+        {
+            if (atual.nome == nome)
+            {
+                return true;
+            }
+          atual = atual.prox;  
+        }
+        return false;
+    }
+
 }
