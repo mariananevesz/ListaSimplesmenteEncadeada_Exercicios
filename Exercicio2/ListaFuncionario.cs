@@ -53,4 +53,20 @@ public class ListaFuncionario
         return false;
     }
 
+    public void removerInicio()
+    {
+        if (this.inicio == null)
+        {
+            Console.WriteLine("Lista vazia!");
+        }
+        else if (this.inicio == this.fim)
+        {
+            this.inicio = null;
+            this.fim = null;
+        }
+        else
+        {
+            this.inicio = this.inicio.prox;
+        }
+    }
 }
