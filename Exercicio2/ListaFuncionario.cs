@@ -69,4 +69,26 @@ public class ListaFuncionario
             this.inicio = this.inicio.prox;
         }
     }
+
+    public void removerFim()
+    {
+        if (this.inicio == null)
+        {
+            Console.WriteLine("Lista vazia!");
+        }
+        else if (this.inicio == this.fim)
+        {
+            this.inicio = null;
+            this.fim = null;
+        }
+        else{
+            NoFuncionario atual = this.inicio;
+            while (atual.prox != this.fim)
+            {
+                atual = atual.prox;
+            }
+            atual.prox = null;
+            this.fim = atual;
+        }
+    }
 }
