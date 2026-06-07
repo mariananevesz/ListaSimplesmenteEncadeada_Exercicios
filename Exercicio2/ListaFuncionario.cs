@@ -39,7 +39,7 @@ public class ListaFuncionario
         }
     }
 
-    public bool buscarporNome(string nome)
+    public bool buscarPorNome(string nome)
     {
         NoFuncionario atual = this.inicio;
         while (atual != null)

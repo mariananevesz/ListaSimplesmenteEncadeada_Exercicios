@@ -12,3 +12,4 @@ C:\Users\neves\OneDrive\Área de Trabalho\ListaSimplesmenteEncadeada_Exercicios\
 C:\Users\neves\OneDrive\Área de Trabalho\ListaSimplesmenteEncadeada_Exercicios\obj\Debug\net10.0\ListaSimplesmenteEncadeada_Exercicios.pdb
 C:\Users\neves\OneDrive\Área de Trabalho\ListaSimplesmenteEncadeada_Exercicios\obj\Debug\net10.0\ListaSimplesmenteEncadeada_Exercicios.genruntimeconfig.cache
 C:\Users\neves\OneDrive\Área de Trabalho\ListaSimplesmenteEncadeada_Exercicios\obj\Debug\net10.0\ref\ListaSimplesmenteEncadeada_Exercicios.dll
+C:\Users\neves\OneDrive\Área de Trabalho\ListaSimplesmenteEncadeada_Exercicios\obj\Debug\net10.0\ListaSimplesmenteEncadeada_Exercicios.sourcelink.json
