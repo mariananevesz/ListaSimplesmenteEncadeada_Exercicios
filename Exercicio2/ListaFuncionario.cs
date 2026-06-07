@@ -91,4 +91,22 @@ public class ListaFuncionario
             this.fim = atual;
         }
     }
+
+    public void imprimir()
+    {
+        if (this.inicio == null)
+        {
+            Console.WriteLine("Lista vazia!");
+        }
+        else
+        {
+            NoFuncionario atual = this.inicio;
+            while (atual != null)
+            {
+                Console.Write(atual.nome + ", " + atual.idade + ", " + atual.telefone + ", " + atual.salario + " -> ");
+                atual = atual.prox;
+            }
+            Console.WriteLine("NULL");
+        }
+    }
 }
