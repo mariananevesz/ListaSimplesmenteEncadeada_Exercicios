@@ -51,7 +51,7 @@ do
             break;
     }
 
-} while (opcao != 0);*/
+} while (opcao != 0);
 
 ListaFuncionario lista = new ListaFuncionario();
 
@@ -129,6 +129,77 @@ do
             break;
 
         case 6:
+            lista.imprimir();
+            break;
+
+        case 0:
+            Console.WriteLine("Programa encerrado.");
+            break;
+
+        default:
+            Console.WriteLine("Opção inválida.");
+            break;
+    }
+
+} while (opcao != 0);*/
+
+ListaDisciplina lista = new ListaDisciplina();
+
+int opcao;
+
+do
+{
+    Console.WriteLine("\n===== MENU - LISTA DE DISCIPLINAS =====");
+    Console.WriteLine("1 - Inserir disciplina ordenada por nome");
+    Console.WriteLine("2 - Buscar disciplina por nome");
+    Console.WriteLine("3 - Remover disciplina por nome");
+    Console.WriteLine("4 - Imprimir lista");
+    Console.WriteLine("0 - Sair");
+    Console.Write("Escolha uma opção: ");
+
+    opcao = int.Parse(Console.ReadLine());
+
+    switch (opcao)
+    {
+        case 1:
+            Console.Write("Digite o nome da disciplina: ");
+            string nome = Console.ReadLine();
+
+            Console.Write("Digite o período: ");
+            int periodo = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a carga horária: ");
+            int cargaHoraria = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o professor responsável: ");
+            string professorResponsavel = Console.ReadLine();
+
+            lista.inserirOrdenado(nome, periodo, cargaHoraria, professorResponsavel);
+            break;
+
+        case 2:
+            Console.Write("Digite o nome da disciplina que deseja buscar: ");
+            string nomeBusca = Console.ReadLine();
+
+            if (lista.buscarPorNome(nomeBusca))
+            {
+                Console.WriteLine("Disciplina encontrada!");
+            }
+            else
+            {
+                Console.WriteLine("Disciplina não encontrada.");
+            }
+
+            break;
+
+        case 3:
+            Console.Write("Digite o nome da disciplina que deseja remover: ");
+            string nomeRemover = Console.ReadLine();
+
+            lista.removerPorNome(nomeRemover);
+            break;
+
+        case 4:
             lista.imprimir();
             break;
 
